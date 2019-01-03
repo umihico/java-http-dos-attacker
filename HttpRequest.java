@@ -40,13 +40,17 @@ public class HttpRequest implements Callable<HashMap<String,String> > {
                 // conn.setConnectTimeout(100000);
                 conn.setRequestMethod("GET");
                 // System.out.println("start request");
-                BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                int statusCode = conn.getResponseCode();
+                if (statusCode==200) {
+                        BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                } else {
+                        BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+                }
                 String line;
                 while ((line = rd.readLine()) != null) {
                         result.append(line);
                 }
                 rd.close();
-                int statusCode = conn.getResponseCode();
                 resultMap.put("statusCode",Integer.toString(statusCode));
                 // System.out.println(statusCode);
                 resultMap.put("detail",result.toString());
