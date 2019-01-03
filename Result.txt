@@ -1,10 +1,8 @@
-Target URL:
-https://uy34uokjte.execute-api.us-west-2.amazonaws.com/default/java-http-attacker-test-site
 Attacking for '30' seconds...
-passed 30 sec  total 20115times    '200':20115times
+passed 30 sec  'total' 19842 '200':19842
 ---Summary---
----status code '200'  total '20115' times  '1' patterns body text---
----status code '200'  frequent body text '20115' times---
+---status code '200'  total '19842' times  '1' patterns body text---
+---status code '200'  frequent body text '19842' times---
 
 '"Hello from Lambda!"'
 
