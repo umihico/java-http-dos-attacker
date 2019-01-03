@@ -78,7 +78,7 @@ public class HttpParralelExecutor {
                                                 sumbitCnt++;
                                                 doneRequestQueue.submit(new HttpRequest(targetUrl));
                                         } else {
-                                                Thread.sleep(10);
+                                                Thread.sleep(1);
                                         }
                                 } else {
                                         break;
