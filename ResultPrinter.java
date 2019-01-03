@@ -76,9 +76,9 @@ public class ResultPrinter {
         public void printRealtimeStatusFunc(long total){
                 // System.out.println("resultPrinter "+i+" :"+newResult);
                 System.out.print("\r");
-                System.out.print("passed "+(System.currentTimeMillis()-this.startTime)/1000 + " sec  total "+ total + "times    ");
+                System.out.print("passed "+(System.currentTimeMillis()-this.startTime)/1000 + " sec  'total' "+ total + " ");
                 for (String key : statusCodeCountDict.keySet()) {
-                        System.out.print("'"+key+"':" +((HashMap)statusCodeCountDict.get( key)).get( "sum" )+"times    ");
+                        System.out.print("'"+key+"':" +((HashMap)statusCodeCountDict.get( key)).get( "sum" )+" ");
                 }
 
         }
