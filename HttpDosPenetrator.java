@@ -1,8 +1,3 @@
-import java.util.concurrent.CompletionService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.ExecutorCompletionService;
-import java.util.List;
 import java.util.concurrent.Future;
 // javac HttpDosPenetrator.java & java HttpDosPenetrator 30 https://uy34uokjte.execute-api.us-west-2.amazonaws.com/default/java-http-attacker-test-site
 public class HttpDosPenetrator {

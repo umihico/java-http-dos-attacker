@@ -1,16 +1,5 @@
-import java.util.concurrent.Executors;
-
-import java.util.List;
-import java.util.Queue;
 import java.util.concurrent.CompletionService;
-import java.util.concurrent.ExecutorCompletionService;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.ExecutorCompletionService;
-import java.util.concurrent.Future;
-import java.util.Queue;
 import java.util.HashMap;
 import java.util.stream.Collectors;
 import java.util.Map.Entry;
@@ -43,7 +32,6 @@ public class ResultPrinter {
                                 break;
                         }
                         total++;
-                        // Future<HashMap<String,String>> future = this.doneRequestQueue.poll(10,TimeUnit.SECONDS);
                         Future<HashMap<String,String> > future = this.doneRequestQueue.take();
                         HashMap<String,String> newResult = future.get();
                         String statusCode=newResult.get("statusCode");
