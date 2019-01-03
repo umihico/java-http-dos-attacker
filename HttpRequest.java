@@ -11,6 +11,8 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.HttpURLConnection;
 import java.util.HashMap;
+import java.io.InputStreamReader;
+import java.io.IOException;
 // javac HttpRequest.java & java HttpRequest
 
 
@@ -41,7 +43,13 @@ public class HttpRequest implements Callable<HashMap<String,String> > {
                 conn.setRequestMethod("GET");
                 // System.out.println("start request");
                 int statusCode = conn.getResponseCode();
-                BufferedReader rd = new BufferedReader(new InputStreamReader(conn.redirectErrorStream()));
+                InputStreamReader inputStreamReader = null;
+                try {
+                        inputStreamReader = new InputStreamReader(conn.getInputStream());
+                } catch(IOException exception) {
+                        inputStreamReader = new InputStreamReader(conn.getErrorStream());
+                }
+                BufferedReader rd = new BufferedReader(inputStreamReader);
                 String line;
                 while ((line = rd.readLine()) != null) {
                         result.append(line);
