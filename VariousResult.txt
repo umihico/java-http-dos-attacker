@@ -1,0 +1,99 @@
+Target URL:
+https://uy34uokjte.execute-api.us-west-2.amazonaws.com/default/java-http-attacker-test-site
+Attacking for '30' seconds...
+passed 30 sec  total 7832times    '200':6293times    '301':523times    '302':501times    'error':515times
+---Summary---
+---status code '200'  total '6293' times  '5168' patterns body text---
+---status code '200'  frequent body text '126' times---
+
+'<!DOCTYPE html><html lang="mul" class="no-js"><head><meta charset="utf-8"><title>Wikipedia</title><meta name="description" content="Wikipedia is a free online enc$
+clopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."><![if gt IE 7]><script>document.documentElement.className = do$
+ument.documentElement.className.replace( /(^|\s)no-js(\s|$)/, "$1js-enabl///////////////////b.js"></script><![endif]><![if gt IE 9]><script src="portal/wikipedia.o$
+g/assets/js/gt-ie9-a2995951ca.js"></script><![endif]><![if lte IE 9]><style>.styled-select {        display: block;    }</style><![endif]><!--[if lte IE 9]><style>
+   .langlist > ul {        text-align: center;    }    .langlist > ul > li {        display: inline;        padding: 0 0.5em;    }</style><![endif]--></body></html$
+'
+
+---status code '200'  frequent body text '120' times---
+
+'<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head><meta http-equiv="content-type" content="text/ht$
+l; charset=utf-8"><meta http-equiv="content-style-type" content="text/css"><meta http-equiv="content-script-type" content="text/javascript"><meta name="description$
+ content="日本最大級のポータルサイト。検索、オークション、ニュース、メール、コミュニティ、ショッピング、など80以上のサービスを展開。あ/////////////////////about.ya$
+oo.co.jp/docs/info/terms/">利用規約</a> - <a href="https://about.yahoo.co.jp/docs/pr/disclaimer.html">免責事項</a> - <a href="https://about.yahoo.co.jp/info/medias$
+atement/">メディアステートメント</a> - <a href="https://privacy.yahoo.co.jp/">プライバシー</a></td></tr><tr><td align="center">Copyright (C) 2019 Yahoo Japan Corpo$
+ation. All Rights Reserved.</td></tr></table></td></tr></table></center></body></html>'
+
+---status code '200'  frequent body text '118' times---
+
+'<!DOCTYPE html><html lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" class="" >  <head>          <script src="//www.scdn.co/w$
+bpack/jquery-2.1.3.min.f68c652ef2d054f99e40.js"></script>                <script>            var spweb = spweb || {};spweb.config = {  environment: {    staticUrl:
+'https://www.scdn.co'  },  sso: {    host: 'https://accounts.spotify.com'///////////////////     var ftBasicCollapseBtn = $('#ft-basic-collapse-btn');      if (typ$
+of ftBasicCollapseBtn.attr('aria-expanded') === 'undefined' || ftBasicCollapseBtn.attr('aria-expanded') === 'false') {        ftBasicCollapseBtn.click();      }
+});  </script>    <script async src="//vt.myvisualiq.net/2/afTxMmlGwCNRJiC5Bd75ug%3D%3D/vt-150.js"></script></body><!-- This page was rendered using Twig --></html$
+'
+
+---status code '301'  total '523' times  '3' patterns body text---
+---status code '301'  frequent body text '256' times---
+
+'<html><head><title>301 Moved Permanently</title></head><body bgcolor="white"><center><h1>301 Moved Permanently</h1></center><hr><center>nginx</center></body></htm$
+>'
+
+---status code '301'  frequent body text '146' times---
+
+'<html><head><title>301 Moved Permanently</title></head><body bgcolor="white"><center><h1>301 Moved Permanently</h1></center><hr><center> NWS </center></body></htm$
+>'
+
+---status code '301'  frequent body text '121' times---
+
+''
+
+---status code '302'  total '501' times  '4' patterns body text---
+---status code '302'  frequent body text '143' times---
+
+'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"><html><head><title>302 Found</title></head><body bgcolor="white"><h1>302 Found</h1><p>The requested resource resides temporarily under a different URI.</p><hr/>Powered by Tengine</body></html>'
+
+---status code '302'  frequent body text '126' times---
+
+'<html><head><title>302 Found</title></head><body bgcolor="white"><center><h1>302 Found</h1></center><hr><center>JengineD/1.7.2.1</center></body></html>'
+
+---status code '302'  frequent body text '119' times---
+
+''
+
+---status code 'error'  total '515' times  '9' patterns body text---
+---status code 'error'  frequent body text '130' times---
+
+'java.io.IOException: Server returned HTTP response code: 400 for URL: https://googleweblight.com'
+
+---status code 'error'  frequent body text '123' times---
+
+'java.io.FileNotFoundException: https://sm.cn'
+
+---status code 'error'  frequent body text '118' times---
+
+'java.io.IOException: Server returned HTTP response code: 503 for URL: https://www.amazon.com/'
+
+---status code 'error'  frequent body text '107' times---
+
+'java.io.IOException: Server returned HTTP response code: 429 for URL: https://www.reddit.com/'
+
+---status code 'error'  frequent body text '28' times---
+
+'java.io.IOException: Server returned HTTP response code: 502 for URL: https://www.reddit.com/'
+
+---status code 'error'  frequent body text '6' times---
+
+'java.io.IOException: Server returned HTTP response code: 403 for URL: https://office.com'
+
+---status code 'error'  frequent body text '1' times---
+
+'java.net.SocketException: Connection reset'
+
+---status code 'error'  frequent body text '1' times---
+
+'java.io.IOException: Premature EOF'
+
+---status code 'error'  frequent body text '1' times---
+
+'javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake'
+
+---Summary end---
