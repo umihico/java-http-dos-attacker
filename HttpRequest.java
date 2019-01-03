@@ -41,12 +41,7 @@ public class HttpRequest implements Callable<HashMap<String,String> > {
                 conn.setRequestMethod("GET");
                 // System.out.println("start request");
                 int statusCode = conn.getResponseCode();
-                BufferedReader rd;
-                if (statusCode==200) {
-                        rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-                } else {
-                        rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
-                }
+                BufferedReader rd = new BufferedReader(new InputStreamReader(conn.redirectErrorStream()));
                 String line;
                 while ((line = rd.readLine()) != null) {
                         result.append(line);
