@@ -41,10 +41,11 @@ public class HttpRequest implements Callable<HashMap<String,String> > {
                 conn.setRequestMethod("GET");
                 // System.out.println("start request");
                 int statusCode = conn.getResponseCode();
+                BufferedReader rd;
                 if (statusCode==200) {
-                        BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                        rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
                 } else {
-                        BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
+                        rd = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
                 }
                 String line;
                 while ((line = rd.readLine()) != null) {
