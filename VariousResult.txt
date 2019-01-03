@@ -1,3 +1,5 @@
+Target URL:
+https://uy34uokjte.execute-api.us-west-2.amazonaws.com/default/java-http-attacker-test-site
 Attacking for '30' seconds...
 passed 30 sec  'total' 4789 '200':2465 '301':283 '302':314 '502':6 '503':1498 '404':73 '429':59 'error':91
 ---Summary---
