@@ -67,7 +67,7 @@ public class HttpParralelExecutor {
                 @Override
                 public Long call() throws Exception {
                         int vcpu = Runtime.getRuntime().availableProcessors();
-                        int jobQueueMaxSize=vcpu*2;
+                        int jobQueueMaxSize=vcpu*20;
                         long endTime = System.currentTimeMillis()+(attackSeconds*1000);
                         long sumbitCnt = 0l;
 
