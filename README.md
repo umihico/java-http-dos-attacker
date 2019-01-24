@@ -13,7 +13,7 @@ $ java HttpDosPenetrator SECONDS URL
 ```
 例:30秒間指定url*にGETリクエストを送る場合
 ```
-$ java HttpDosPenetrator 30 https://1jex0xaj69.execute-api.ap-northeast-1.amazonaws.com/default/java-dos-test-site
+$ java HttpDosPenetrator 30 https://uy34uokjte.execute-api.us-west-2.amazonaws.com/default/java-http-target-site
 ```
 \*urlは被攻撃用に作成したaws lambdaとaws gateway APIのurl。初期状態の"Hello from Lambda!"を応答する。  
 
@@ -52,9 +52,9 @@ AWS EC2 Amazon Linux AMI t3.xlarge, 4vCPU, 8GB (Tokyo region)
 被攻撃マシン  
 AWS lambda (Tokyo region)  
 ```
-$ java HttpDosPenetrator 30 https://1jex0xaj69.execute-api.ap-northeast-1.amazonaws.com/default/java-dos-test-site
+$ java HttpDosPenetrator 30 https://uy34uokjte.execute-api.us-west-2.amazonaws.com/default/java-http-target-site
 Target URL:
-https://1jex0xaj69.execute-api.ap-northeast-1.amazonaws.com/default/java-dos-test-site
+https://uy34uokjte.execute-api.us-west-2.amazonaws.com/default/java-http-target-site
 Attacking for '30' seconds...
 passed 30 sec  'total' 131224 '200':131224
 ---Summary---
